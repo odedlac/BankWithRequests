@@ -12,15 +12,15 @@ import code.Accounts;
 import code.BackgroundCheck;
 import code.Display;
 import code.MyRequest;
-import code.OpenAccountRequest;
+import code.OpenAccountHandler;
 
 /**
  * @author oded
  *
  */
-public class OpenAccountRequestTest {
+public class OpenAccountHandlerTest {
 
-	private  OpenAccountRequest classUnderTest;
+	private  OpenAccountHandler classUnderTest;
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -30,7 +30,7 @@ public class OpenAccountRequestTest {
 		BackgroundCheck backGroundCheck  = new BackgroundCheck();
 		Display display = new Display();
 		
-		classUnderTest = new OpenAccountRequest(accounts,backGroundCheck,display);
+		classUnderTest = new OpenAccountHandler(accounts,backGroundCheck,display);
 	}
 
 	@Test

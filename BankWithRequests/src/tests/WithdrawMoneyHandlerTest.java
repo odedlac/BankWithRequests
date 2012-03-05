@@ -12,15 +12,15 @@ import code.Accounts;
 import code.Display;
 import code.Money;
 import code.MyRequest;
-import code.WithdrawMoneyRequest;
+import code.WithdrawMoneyHandler;
 
 /**
  * @author oded
  *
  */
-public class WithdrawMoneyRequestTest {
+public class WithdrawMoneyHandlerTest {
 
-	private WithdrawMoneyRequest classUnderTest;
+	private WithdrawMoneyHandler classUnderTest;
 
 	/**
 	 * @throws java.lang.Exception
@@ -34,7 +34,7 @@ public class WithdrawMoneyRequestTest {
 		Money money = new Money();
 		Display display = new Display();
 		
-		classUnderTest = new WithdrawMoneyRequest(accounts,money,display);
+		classUnderTest = new WithdrawMoneyHandler(accounts,money,display);
 	}
 
 	@Test
